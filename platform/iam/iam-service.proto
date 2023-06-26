@@ -20,3 +20,4 @@ message ValidateTokenResponse{
 service IamService {
   rpc ValidateToken(ValidateTokenRequest) returns (ValidateTokenResponse);
 }
+
