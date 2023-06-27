@@ -8,7 +8,8 @@ message ValidateTokenRequest{
   string method = 1;
   string path = 2;
   string service_url = 3;
-  string token = 4;
+  string user_id = 4;
+  string token = 5;
 }
 
 message ValidateTokenResponse{
