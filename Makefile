@@ -1,6 +1,4 @@
-GOPROXY=https://goproxy.interticket.com
-
-PROTOBUF_PATH?=/Users/nagyk/Developer/platform/hooker-grpc
+PROTOBUF_PATH?=.../platform/hooker-grpc/platform/iam/
 
 .PHONY: generate
 
@@ -17,4 +15,4 @@ generate: clean update gen
 	git add .
 
 gen:
-	protoc --proto_path=/Users/nagyk/Developer/platform/hooker-grpc/platform/iam/ --go_out=./pb --go-grpc_out=./pb iam-service.proto
+	protoc --proto_path={PROTOBUF_PATH} --go_out=./pb --go-grpc_out=./pb iam-service.proto
